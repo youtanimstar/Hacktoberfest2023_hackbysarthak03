@@ -13,7 +13,7 @@
 1. Fork this repository to your GitHub account.
 2. Clone the forked repository to your local machine:
 ```bash
-   git clone https://github.com/Am10aN16/hacktoberfest2023.git
+   git clone https://github.com/hackbysarthak03/Hacktoberfest2023.git
    ```
 3. Create a new branch for your contribution:
    ```bash
