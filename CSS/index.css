@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Gabarito&family=Gruppo&family=Jost&family=Lato&family=Montserrat:wght@500&family=Oswald:wght@300&family=Pacifico&family=Poppins&family=Quicksand&family=Roboto&family=Teko:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Section */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color: aquamarine;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: 'Gabarito', cursive;
+    padding: 10px 25px;
+}
+
+.navbar-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gabarito', cursive;
+}
+
+.navbar-list-item{
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+/* Body Section */
+
+.container-1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo{
+    font-family: 'Lato', cursive;
+    font-size: 120px;
+}
+
+.explore-btn{
+    height: 50px;
+    width: 300px;
+    margin: 40px 0px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: 'Gabarito', cursive;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.explore-btn:hover{
+    width: 320px;
+}
+
+
+/* Contributors Section */
+
+.container-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#contri{
+    margin: 30px 0px;
+    font-size: 40px;
+}
+
+.hack{
+    font-size: 60px;
+    font-family: 'Teko', sans-serif;
+}
+
+.people{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    margin: 5px 0px;
+    font-size: 25px;
+    font-family: 'Gabarito', cursive;
+}
+
+.desc{
+    margin: 5px 0px;
+    font-size: 18px;
+    font-family: 'Lato', regular;
+}
+
+/* Footer Section */
+
+.footer{
+    background-color: aliceblue;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title, #clg{
+    font-family: 'Gabarito', cursive;
+    font-size: 20px;
+}
+
+#name{
+    font-family: 'Gabarito', cursive;
+    font-size: 35px;
+}
+
+.social-media{
+    display: flex;
+    margin: 25px 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gabarito', cursive;
+}
+
+.media1{
+    margin: 0px 10px;
+}
