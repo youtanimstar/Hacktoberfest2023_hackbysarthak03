@@ -34,20 +34,20 @@
     font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
-    color: #fff;
-    transition: all 0.5s;
+    color: #fff;  
+    transition: all 0.5s; /* Add transition to all effects to links  */
 }
 .navbar-list-item a {
     text-decoration: none;
-    color: #fff; /* Change link color to white */
-    /* transition: all 0.3s; */
+    color: #fff; /* Change link color to white because the old color was not visible enough */
+    /* transition: color 0.3s; */ /* Is not needed since the parent (.navbar-list-item) has transition */
 }
 
 
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Change link color to white */
 }
 
 /* Additional styles for the "Contributors" link
@@ -56,8 +56,7 @@
 } */
 
 .navbar-list-item:hover a{
-    font-weight: bold;
-    /* transform: scale(1.1); */
+    font-weight: bold; /* Change link weight to bold because the orange was not visible enough */
 }
 
 /* Hamburger menu icon */
@@ -91,7 +90,7 @@
 .container-1{
     height: 100vh;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1rem; /* Some margin top to avoid the navbar */
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -246,7 +245,7 @@
 
 .main-logo {
     animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
-    text-align: center;
+    text-align: center; /* Because the logo was originally aligned to the left and this was causing some issues */
 }
 /* Efek Hover pada Card */
 .card:hover {
