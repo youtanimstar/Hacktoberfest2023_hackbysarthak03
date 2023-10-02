@@ -1,4 +1,3 @@
-c
 # 🚀 Hacktoberfest 2023 
 
 A Simple Webpage, to add your github profile. UI can also be fixed, all depends on you ! So, try out this repo 🤩 and win exciting rewards from Hacktoberfest 2023 ! ✨ 
