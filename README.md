@@ -1,4 +1,4 @@
-
+c
 # 🚀 Hacktoberfest 2023 
 
 A Simple Webpage, to add your github profile. UI can also be fixed, all depends on you ! So, try out this repo 🤩 and win exciting rewards from Hacktoberfest 2023 ! ✨ 
@@ -23,7 +23,7 @@ A Simple Webpage, to add your github profile. UI can also be fixed, all depends 
 1. Fork this repository to your GitHub account.
 2. Clone the forked repository to your local machine:
 ```bash
-   git clone https://github.com/Am10aN16/hacktoberfest2023.git
+   git clone https://github.com/hackbysarthak03/Hacktoberfest2023.git
    ```
 3. Create a new branch for your contribution:
    ```bash
