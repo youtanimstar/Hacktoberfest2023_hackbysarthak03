@@ -172,3 +172,48 @@
 .media1{
     margin: 0px 10px;
 }
+/* Efek Hover untuk Tombol Explore */
+.explore-btn {
+    background-color: #007BFF; /* Warna latar belakang saat normal */
+    color: #fff; /* Warna teks saat normal */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi selama 0.3 detik */
+}
+
+.explore-btn:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+    color: #fff; /* Warna teks saat dihover (bisa disamakan dengan warna saat normal) */
+}
+/* Animasi Fade-in */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-logo {
+    animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
+}
+/* Efek Hover pada Card */
+.card:hover {
+    transform: translateY(-10px); /* Geser card ke atas saat dihover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efek transisi */
+}
+
+/* Efek Hover pada Label */
+.card:hover .label {
+    color: #007BFF; /* Ganti warna label saat dihover */
+}
+
+/* Efek Hover pada Github Icon */
+.card:hover .github img {
+    filter: grayscale(0); /* Hilangkan efek grayscale pada gambar saat dihover */
+}
+
