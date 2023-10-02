@@ -9,17 +9,20 @@
 
 /* Navbar Section */
 .navbar {
-    background-color: aquamarine;
+    background-color: #007BFF;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 40px;
     font-family: 'Gabarito', cursive;
-    padding: 10px 25px;
+    padding: 0px 25px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-list {
@@ -28,20 +31,27 @@
 }
 
 .navbar-list-item {
-    font-size: 30px;
+    font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
+    transition: color 0.3s;
 }
+.navbar-list-item a {
+    text-decoration: none;
+    color: #fff; /* Change link color to white */
+    transition: color 0.3s; /* Add smooth color transition */
+}
+
 
 .navbar a {
     text-decoration: none;
     color: black;
 }
 
-/* Additional styles for the "Contributors" link */
+/* Additional styles for the "Contributors" link
 .navbar-list-item a {
     color: inherit;
-}
+} */
 
 .navbar-list-item a:hover {
     color: #ff9900;
@@ -51,6 +61,7 @@
 .menu-toggle {
     display: none;
     font-size: 24px;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -242,4 +253,25 @@
 .card:hover .github img {
     filter: grayscale(0); /* Hilangkan efek grayscale pada gambar saat dihover */
 }
+/* Mobile navigation styles */
+.navbar-list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #007BFF; /* Match the navbar background color */
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.navbar-list.active .navbar-list-item {
+    padding: 10px 20px;
+    text-align: center;
+}
+.navbar-list-item:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
