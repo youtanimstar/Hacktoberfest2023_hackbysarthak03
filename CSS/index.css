@@ -34,18 +34,20 @@
     font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: color 0.3s;
+    color: #fff;
+    transition: all 0.5s;
 }
 .navbar-list-item a {
     text-decoration: none;
     color: #fff; /* Change link color to white */
-    transition: color 0.3s; /* Add smooth color transition */
+    /* transition: all 0.3s; */
 }
+
 
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 /* Additional styles for the "Contributors" link
@@ -53,8 +55,9 @@
     color: inherit;
 } */
 
-.navbar-list-item a:hover {
-    color: #ff9900;
+.navbar-list-item:hover a{
+    font-weight: bold;
+    /* transform: scale(1.1); */
 }
 
 /* Hamburger menu icon */
@@ -88,6 +91,7 @@
 .container-1{
     height: 100vh;
     width: 100%;
+    margin-top: 1rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -242,6 +246,7 @@
 
 .main-logo {
     animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
+    text-align: center;
 }
 /* Efek Hover pada Card */
 .card:hover {
