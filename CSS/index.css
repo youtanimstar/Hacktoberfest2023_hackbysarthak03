@@ -35,6 +35,11 @@
     cursor: pointer;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Body Section */
 
 .container-1{
