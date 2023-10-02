@@ -75,6 +75,12 @@
         display: none;
     }
 }
+/*To make the card profile circular*/
+
+.card .img-sec img {
+    border-radius: 50%;
+}
+
 
 
 /* Body Section */
