@@ -52,4 +52,3 @@ A Simple Webpage, to add your github profile. UI can also be fixed, all depends 
 Thank you for your interest in contributing to this project and for participating in Hacktoberfest. We appreciate your contributions and look forward to seeing your amazing work!
 
 Happy coding!
-```
