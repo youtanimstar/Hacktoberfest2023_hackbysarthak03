@@ -7,6 +7,53 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+.section {
+    padding: 90px 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 52px;
+}
+
+h2{
+    font-size: 44px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+li{
+    list-style: none;
+}
+
 /* Navbar Section */
 .navbar {
     width: 80%;
@@ -39,7 +86,8 @@
     font-size: 18px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: color 0.3s;
+    color: #fff;  
+    transition: all 0.5s; /* Add transition to all effects to links  */
 }
 
 .navbar-list-item a {
@@ -48,7 +96,10 @@
     /* Change link color to white */
     transition: color 0.3s;
     /* Add smooth color transition */
+    color: #fff; /* Change link color to white because the old color was not visible enough */
+    /* transition: color 0.3s; */ /* Is not needed since the parent (.navbar-list-item) has transition */
 }
+
 
 
 .navbar a {
@@ -56,6 +107,15 @@
     color: #fff;
 }
 
+
+/* Additional styles for the "Contributors" link
+.navbar-list-item a {
+    color: inherit;
+} */
+
+.navbar-list-item:hover a{
+    font-weight: bold; /* Change link weight to bold because the orange was not visible enough */
+}
 
 /* Hamburger menu icon */
 .menu-toggle {
@@ -87,9 +147,16 @@
 
 /* Body Section */
 
-.container-1 {
+.code-img img {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+}
+
+.container-1{
     height: 100vh;
     width: 100%;
+    margin-top: 1rem; /* Some margin top to avoid the navbar */
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -100,12 +167,15 @@
 .main-logo {
     font-family: 'Lato', cursive;
     font-size: 120px;
+    text-align: center;
+    margin: 0 auto 0px auto;
+    max-width: 600px;
 }
 
-.explore-btn {
+.explore-btn{
+    margin: 40px 0px;
     height: 50px;
     width: 300px;
-    margin: 40px 0px;
     border: 1px solid black;
     font-size: 20px;
     font-family: 'Gabarito', cursive;
@@ -266,6 +336,8 @@
 .main-logo {
     animation: fade-in 1s ease-in-out;
     /* Nama animasi, durasi, dan jenis percepatan */
+    animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
+    text-align: center; /* Because the logo was originally aligned to the left and this was causing some issues */
 }
 
 /* Efek Hover pada Card */
