@@ -7,6 +7,35 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* Utilities - Reusable styling */
+
+
+.section {
+    padding: 90px 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Navbar Section */
 .navbar {
     background-color: #007BFF;
@@ -85,6 +114,12 @@
 
 /* Body Section */
 
+.code-img img {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+}
+
 .container-1{
     height: 100vh;
     width: 100%;
@@ -97,13 +132,16 @@
 
 .main-logo{
     font-family: 'Lato', cursive;
-    font-size: 120px;
+    /* font-size: 120px; */
+    text-align: center;
+    margin: 0 auto 0px auto;
+    max-width: 600px;
 }
 
 .explore-btn{
+    /* margin: 40px 0px; */
     height: 50px;
     width: 300px;
-    margin: 40px 0px;
     border: 1px solid black;
     font-size: 20px;
     font-family: 'Gabarito', cursive;
