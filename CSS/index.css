@@ -288,7 +288,9 @@ li{
     margin-left: 5%;
 }
 
-
+.change:hover{
+    color:rgb(39, 36, 36);
+}
 #title,
 #clg {
     font-family: 'Gabarito', cursive;
