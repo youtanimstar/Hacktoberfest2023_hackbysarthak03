@@ -9,12 +9,16 @@
 
 /* Navbar Section */
 .navbar {
+    width: 80%;
     background-color: #007BFF;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .logo {
@@ -28,6 +32,7 @@
 .navbar-list {
     list-style: none;
     display: flex;
+    color: #fff;
 }
 
 .navbar-list-item {
@@ -36,26 +41,21 @@
     cursor: pointer;
     transition: color 0.3s;
 }
+
 .navbar-list-item a {
     text-decoration: none;
-    color: #fff; /* Change link color to white */
-    transition: color 0.3s; /* Add smooth color transition */
+    color: #fff;
+    /* Change link color to white */
+    transition: color 0.3s;
+    /* Add smooth color transition */
 }
 
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
-/* Additional styles for the "Contributors" link
-.navbar-list-item a {
-    color: inherit;
-} */
-
-.navbar-list-item a:hover {
-    color: #ff9900;
-}
 
 /* Hamburger menu icon */
 .menu-toggle {
@@ -71,10 +71,12 @@
     .menu-toggle {
         display: block;
     }
+
     .navbar-list {
         display: none;
     }
 }
+
 /*To make the card profile circular*/
 
 .card .img-sec img {
@@ -85,7 +87,7 @@
 
 /* Body Section */
 
-.container-1{
+.container-1 {
     height: 100vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -95,12 +97,12 @@
     align-items: center;
 }
 
-.main-logo{
+.main-logo {
     font-family: 'Lato', cursive;
     font-size: 120px;
 }
 
-.explore-btn{
+.explore-btn {
     height: 50px;
     width: 300px;
     margin: 40px 0px;
@@ -112,14 +114,14 @@
     transition: 0.2s;
 }
 
-.explore-btn:hover{
+.explore-btn:hover {
     width: 320px;
 }
 
 
 /* Contributors Section */
 
-.container-2{
+.container-2 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -128,24 +130,36 @@
     overflow: hidden;
 }
 
-#contri{
+#contri {
     margin: 30px 0px;
     font-size: 40px;
 }
 
-.hack{
+.hack {
     font-size: 60px;
     font-family: 'Teko', sans-serif;
 }
 
-.people{
+.contributors-cards {
+    /* make only 4 cards appear in one row */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 20px 0px;
+    overflow: hidden;
+
+}
+
+.people {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.card{
+.card {
     height: 350px;
     width: 300px;
     margin: 20px;
@@ -158,20 +172,20 @@
     align-items: center;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.label{
+.label {
     margin: 5px 0px;
     font-size: 25px;
     font-family: 'Gabarito', cursive;
 }
 
-.desc{
+.desc {
     margin: 5px 0px;
     font-size: 18px;
     font-family: 'Lato', regular;
@@ -179,86 +193,103 @@
 
 /* Footer Section */
 
-.footer{
-    background-color: aliceblue;
-    height: 250px;
+.footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.first-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: aliceblue;
+    height: 100px;
 }
 
-#title, #clg{
+.first-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+
+#title,
+#clg {
     font-family: 'Gabarito', cursive;
     font-size: 20px;
 }
 
-#name{
+#name {
     font-family: 'Gabarito', cursive;
     font-size: 35px;
 }
 
-.social-media{
+.social-media {
     display: flex;
-    margin: 25px 20px;
     justify-content: center;
     align-items: center;
-    font-family: 'Gabarito', cursive;
+    margin-right: 5%;
 }
 
-.media1{
+.media1 {
     margin: 0px 10px;
 }
+
 /* Efek Hover untuk Tombol Explore */
 .explore-btn {
-    background-color: #007BFF; /* Warna latar belakang saat normal */
-    color: #fff; /* Warna teks saat normal */
+    background-color: #007BFF;
+    /* Warna latar belakang saat normal */
+    color: #fff;
+    /* Warna teks saat normal */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Efek transisi selama 0.3 detik */
+    transition: background-color 0.3s, color 0.3s;
+    /* Efek transisi selama 0.3 detik */
 }
 
 .explore-btn:hover {
-    background-color: #0056b3; /* Warna latar belakang saat dihover */
-    color: #fff; /* Warna teks saat dihover (bisa disamakan dengan warna saat normal) */
+    background-color: #0056b3;
+    /* Warna latar belakang saat dihover */
+    color: #fff;
+    /* Warna teks saat dihover (bisa disamakan dengan warna saat normal) */
 }
+
 /* Animasi Fade-in */
 @keyframes fade-in {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 .main-logo {
-    animation: fade-in 1s ease-in-out; /* Nama animasi, durasi, dan jenis percepatan */
+    animation: fade-in 1s ease-in-out;
+    /* Nama animasi, durasi, dan jenis percepatan */
 }
+
 /* Efek Hover pada Card */
 .card:hover {
-    transform: translateY(-10px); /* Geser card ke atas saat dihover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efek transisi */
+    transform: translateY(-10px);
+    /* Geser card ke atas saat dihover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efek bayangan saat dihover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Efek transisi */
 }
 
 /* Efek Hover pada Label */
 .card:hover .label {
-    color: #007BFF; /* Ganti warna label saat dihover */
+    color: #007BFF;
+    /* Ganti warna label saat dihover */
 }
 
 /* Efek Hover pada Github Icon */
 .card:hover .github img {
-    filter: grayscale(0); /* Hilangkan efek grayscale pada gambar saat dihover */
+    filter: grayscale(0);
+    /* Hilangkan efek grayscale pada gambar saat dihover */
 }
+
 /* Mobile navigation styles */
 .navbar-list.active {
     display: flex;
@@ -267,7 +298,8 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #007BFF; /* Match the navbar background color */
+    background-color: #007BFF;
+    /* Match the navbar background color */
     z-index: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -276,8 +308,20 @@
     padding: 10px 20px;
     text-align: center;
 }
+
 .navbar-list-item:hover {
-    background-color: #0056b3; /* Change background color on hover */
+    background-color: #0056b3;
+    /* Change background color on hover */
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+hr{
+    width: 60%;
+}
+
+a{
+    /* make the tag do nothing on hover and set the text color to white */
+    text-decoration: none;
+    color: white;
 }
