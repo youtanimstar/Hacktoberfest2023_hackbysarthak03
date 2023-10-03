@@ -29,7 +29,9 @@
                 <img src="assets/code.jpg">
             </div>
             <div class="main-logo animated">
-                <h1>Welcome to CodeX</h1>
+                <!-- <h1>Welcome to CodeX</h1> -->
+               <!-- type text animation -->
+                <h1>Welcome to <span class="auto-type"></span> </h1> 
                 <button class="explore-btn">
                     Explore
                 </button>
@@ -286,7 +288,17 @@
         menuToggle.addEventListener('click', () => {
             navbarList.classList.toggle('active');
         });
-
+      
+    </script>
+    <!-- added script for type-text creation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var typed=new Typed(".auto-type", {
+            strings:["CodeX"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+        })
     </script>
 </body>
 
