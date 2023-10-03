@@ -32,7 +32,9 @@
                 <img src="assets/code.jpg">
             </div>
             <div class="main-logo animated">
-                <h1>Welcome to CodeX</h1>
+                <!-- <h1>Welcome to CodeX</h1> -->
+               <!-- type text animation -->
+                <h1>Welcome to <span class="auto-type"></span> </h1> 
                 <button class="explore-btn">
                     Explore
                 </button>
@@ -245,6 +247,21 @@
             </div>
             <div class="card">
                 <div class="img-sec">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/31/21/23/   avatar-2027365_1280.png" height="150px"
+                        width="150px">
+                </div>
+                <div class="info">
+                    <div class="label">Ankit Goyal</div>
+                    <div class="desc">Contributor</div>
+                    <div class="github">
+                        <a href="https://github.com/Ankit9126">
+                            <i class="fa-brands fa-github fa-2xl hero"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-sec">
                     <img src="https://cdn.pixabay.com/photo/2021/08/17/09/03/girl-6552421_1280.png" height="150px"
                         width="150px">
                 </div>
@@ -290,6 +307,7 @@
 
             <div class="card">
                 <div class="img-sec">
+
                     <img src="https://cdn.pixabay.com/photo/2021/08/17/09/03/girl-6552421_1280.png" height="150px" width="150px">
                 </div>
                 <div class="info">
@@ -302,6 +320,35 @@
                     </div>
                 </div>
             </div>
+
+
+                    <img src="https://cdn.pixabay.com/photo/2017/01/31/21/23/   avatar-2027365_1280.png" height="150px" width="150px">
+                </div>
+            <div class="info">
+                <div class="label">Kartik Labhshetwar</div>
+                <div class="desc">Contributor</div>
+                <div class="github">
+                    <a href="https://github.com/KartikLabhshetwar">
+                        <img src="assets/github-mark.png" height="50px" width="50px">
+                    </a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="img-sec">
+                <img src="https://cdn.pixabay.com/photo/2017/01/31/21/23/   avatar-2027365_1280.png" height="150px" width="150px">
+            </div>
+        <div class="info">
+            <div class="label">Piyush Kumar Tyagi</div>
+            <div class="desc">Contributor</div>
+            <div class="github">
+                <a href="https://github.com/piyushtyagiofficial">
+                    <img src="assets/github-mark.png" height="50px" width="50px">
+                </a>
+            </div>
+        </div>
 
         </div>
 
@@ -376,7 +423,17 @@
         menuToggle.addEventListener('click', () => {
             navbarList.classList.toggle('active');
         });
-
+      
+    </script>
+    <!-- added script for type-text creation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var typed=new Typed(".auto-type", {
+            strings:["CodeX"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+        })
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
