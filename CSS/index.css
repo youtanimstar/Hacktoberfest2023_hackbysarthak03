@@ -12,10 +12,6 @@ html{
 }
 
 
-
-/* Utilities - Reusable styling */
-
-
 .section {
     padding: 90px 0;
 }
@@ -28,13 +24,35 @@ html{
     padding-right: 24px;
 }
 
-
 .d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 52px;
+}
+
+h2{
+    font-size: 44px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+li{
+    list-style: none;
+}
 
 /* Navbar Section */
 .navbar {
