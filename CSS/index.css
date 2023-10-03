@@ -325,3 +325,87 @@ a{
     text-decoration: none;
     color: white;
 }
+/* Footer styles with a blue gradient background */
+.footer {
+    background: linear-gradient(to right, #0074E4, #00A1E9); /* Blue gradient */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color for the bottom section */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    color: #fff; /* Text color for the copyright notice */
+}
+/* Media query for screens with a maximum width of 768px (typical for tablets and smaller screens) */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 30px; /* Decrease logo font size */
+    }
+
+    .navbar-list {
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #007BFF;
+        z-index: 1;
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .navbar-list-item {
+        padding: 10px 0; /* Adjust vertical padding for menu items */
+        text-align: center;
+    }
+
+    .main-logo {
+        font-size: 80px; /* Decrease main logo font size */
+    }
+
+    .explore-btn {
+        width: 100%; /* Make the Explore button full width */
+    }
+
+    .container-2 {
+        padding: 20px; /* Add padding to contributors section */
+    }
+
+    .card {
+        width: 100%; /* Make cards full width */
+        max-width: 300px; /* Limit maximum card width */
+    }
+}
+
+/* Media query for screens with a maximum width of 480px (typical for smartphones) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px; /* Decrease logo font size further */
+    }
+
+    .main-logo {
+        font-size: 60px; /* Decrease main logo font size further */
+    }
+
+    .navbar-list-item {
+        font-size: 16px; /* Decrease font size for menu items */
+    }
+
+    .explore-btn {
+        font-size: 16px; /* Decrease font size for Explore button */
+    }
+
+    .container-2 {
+        padding: 10px; /* Further reduce padding for contributors section */
+    }
+
+    .card {
+        max-width: 250px; /* Further limit card width */
+    }
+}
