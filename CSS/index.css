@@ -281,3 +281,19 @@
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
+/* Footer styles with a blue gradient background */
+.footer {
+    background: linear-gradient(to right, #0074E4, #00A1E9); /* Blue gradient */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color for the bottom section */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    color: #fff; /* Text color for the copyright notice */
+}
