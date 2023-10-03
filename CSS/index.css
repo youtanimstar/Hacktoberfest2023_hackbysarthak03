@@ -278,7 +278,12 @@ li{
     justify-content: space-between;
     align-items: center;
     background-color: aliceblue;
-    height: 100px;
+    height: 150px;
+}
+.pp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-footer {
